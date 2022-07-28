@@ -1,0 +1,45 @@
+.home {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    &__slideshow {
+        position: absolute;
+        right: 8%;
+        top: 0;
+    }
+
+    &__header-textbox {
+        line-height: 1.3;
+        position: absolute;
+        left: 15%;
+        top: 20%;
+        user-select: none;
+
+        & > span {
+            font-size: 1.8rem;
+            color: var(--color-primary);
+        }
+    }
+
+    &__skills {
+        position: absolute;
+        left: 18%;
+        top: 45%;
+    }
+
+    &__skills-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        column-gap: 8rem;
+        row-gap: 1.2rem;
+        height: 25.2rem;
+    }
+}

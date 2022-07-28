@@ -1,0 +1,41 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact {
+    width: 45rem;
+    font-size: 1.6rem;
+
+    & > p {
+        text-align: justify;
+        margin-bottom: 4rem;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin-left: 4rem;
+        margin-bottom: 1.5rem;
+        transition: color 0.8s;
+
+        &:hover {
+            color: var(--color-primary);
+        }
+    }
+
+    &__item:hover &__icon {
+        fill: var(--color-primary);
+    }
+
+    &__icon {
+        fill: var(--color-grey-dark);
+        width: 18px;
+        height: 18px;
+        transition: fill 0.8s;
+    }
+}

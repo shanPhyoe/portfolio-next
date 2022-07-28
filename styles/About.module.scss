@@ -1,0 +1,52 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about {
+    width: fit-content;
+    margin: 10rem auto;
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: space-between;
+
+    &__content {
+        width: 40rem;
+    }
+
+    &__about {
+        text-align: justify;
+        margin-bottom: 6rem;
+
+        & > p {
+            font-size: 1.6rem;
+            line-height: 1.5;
+        }
+
+        & > p:not(:last-child) {
+            margin-bottom: 1.3rem;
+        }
+    }
+
+    &__love {
+        font-size: 1.6rem;
+    }
+
+    &__love-header {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        & img {
+            transform: translateY(2px);
+        }
+    }
+
+    &__chowchow {
+        width: 40rem;
+    }
+}

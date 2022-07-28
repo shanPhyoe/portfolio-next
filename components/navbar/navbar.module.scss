@@ -1,0 +1,56 @@
+.navbar {
+    width: 100vw;
+    height: 5.8rem;
+    backdrop-filter: blur(8px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 1.8rem;
+    font-family: var(--font-family-heading);
+    color: var(--color-white);
+    z-index: 1000;
+    user-select: none;
+
+    &__home {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        left: 5rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        transition: color 0.3s;
+
+        & > span {
+            color: var(--color-white);
+            font-weight: 800;
+        }
+
+        &:hover {
+            color: var(--color-primary);
+        }
+    }
+
+    &__home:hover &__image {
+        transform: rotateZ(0deg);
+    }
+
+    &__image {
+        transform: rotateZ(-15deg);
+        transition: transform 0.3s;
+        display: block;
+    }
+
+    &__link {
+        padding: 0 1rem;
+        transition: color 0.3s;
+
+        &:hover {
+            color: var(--color-primary);
+        }
+    }
+}
