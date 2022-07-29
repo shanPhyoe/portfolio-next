@@ -32,7 +32,7 @@ const Work = () => {
             <Project
                 title="GOLDFLOW"
                 imagePath="/images/goldflow.png"
-                description="An expense tracker app that will records and calculate all the statistics for incomes, expenses and investments data by monthly, yearly and lifetime. A full stack app that user must create an account, which is quite simple and easy, to secure all user data."
+                description="An expense tracker app that will record and calculate all the statistics for incomes, expenses and investments data by monthly, yearly and lifetime. A full stack app that user must create an account, which is quite simple and easy, to secure all user data."
                 stack="React, Redux, Chart.js, Node.js, Express, JWT"
                 websiteLink="https://goldflow.herokuapp.com"
                 gitRepoLink="https://github.com/shanPhyoe/goldflow"

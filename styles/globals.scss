@@ -1,20 +1,36 @@
 :root {
-    --color-white: #fff;
-    --color-black: #000;
-
-    --color-grey-light: #cdcdd1;
-    --color-grey-dark: #757579;
-
-    --color-primary: #00c6c2;
-    --color-primary-dark: #509d9a;
-
-    --color-secondary: #202023;
-
     --font-family-heading: 'M PLUS 1', sans-serif;
     --font-family-body: 'Lora', serif;
 }
 
+body[data-theme='dark'] {
+    --color-header: #fff;
+    --color-text: #cdcdd1;
+    --color-text-alt: #757579;
+
+    --color-primary: #00c6c2;
+    --color-primary-dark: #509d9a;
+    --color-primary-dark-rgb: 80, 157, 154;
+    --color-primary-maxdark: #006d7e;
+
+    --color-secondary: #202020;
+}
+
+body[data-theme='light'] {
+    --color-header: #000;
+    --color-text: #101010;
+    --color-text-alt: #ababab;
+
+    --color-primary: #00a38d;
+    --color-primary-dark: #00c9b2;
+    --color-primary-dark-rgb: 0, 201, 178;
+    --color-primary-maxdark: #006658;
+
+    --color-secondary: #f8f9f0;
+}
+
 html {
+    overflow-x: hidden;
     box-sizing: border-box;
     font-size: 62.5%;
     position: relative;
@@ -24,8 +40,9 @@ html {
 body {
     background: var(--color-secondary);
     font-family: var(--font-family-body);
-    color: var(--color-grey-light);
+    color: var(--color-text);
     line-height: 1.7;
+    transition: background 0.3s;
 }
 
 *,
@@ -52,7 +69,7 @@ h1,
 h2,
 h3 {
     font-family: var(--font-family-heading);
-    color: var(--color-white);
+    color: var(--color-header);
 }
 
 h1 {
@@ -68,7 +85,7 @@ h2 {
 h3 {
     font-size: 1.9rem;
     font-weight: 700;
-    border-bottom: 3px solid rgba($color: #fff, $alpha: 0.1);
+    border-bottom: 3px solid var(--color-text-alt);
     transition: border-color 0.3s;
     width: fit-content;
     margin-bottom: 2rem;

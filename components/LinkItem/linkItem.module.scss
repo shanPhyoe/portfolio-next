@@ -1,0 +1,16 @@
+.link {
+    padding: 0 1rem 0.3rem;
+    transition: all 0.3s;
+    border-radius: 5px;
+
+    &:hover {
+        color: var(--color-primary);
+    }
+
+    &--active {
+        color: var(--color-primary);
+        background: rgba(var(--color-primary-dark-rgb), 0.3);
+        border: 1px soid var(--color-primary);
+        transform: translateY(-2px);
+    }
+}

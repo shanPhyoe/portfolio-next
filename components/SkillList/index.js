@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import Image from 'next/image';
+import DogPaw from '../../public/icons/dog-paw.svg';
 
 import styles from './skillList.module.scss';
 
@@ -22,12 +22,7 @@ const SkillList = ({ name }) => {
                     isHovering ? styles['skill-list__image--active'] : ''
                 }`}
             >
-                <Image
-                    src="/icons/dog-paw.svg"
-                    width={18}
-                    height={18}
-                    alt="dog paw"
-                />
+                <DogPaw className={styles['skill-list__icon']} />
             </div>
             <span>{name}</span>
         </div>

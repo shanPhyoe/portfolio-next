@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+import Programmer from '../components/Programmer';
+
 import styles from '../styles/About.module.scss';
 
 const About = () => {
@@ -36,7 +38,9 @@ const About = () => {
                         </p>
                     </div>
                 </div>
-                <div className={styles.about__chowchow}></div>
+                <div className={styles.about__chowchow}>
+                    <Programmer />
+                </div>
             </div>
         </div>
     );

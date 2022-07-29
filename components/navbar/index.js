@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import LinkItem from '../LinkItem';
 
 import styles from './navbar.module.scss';
 
@@ -18,15 +19,9 @@ const Navbar = () => {
                     <span>shanPhyoe</span>
                 </a>
             </Link>
-            <Link href="/about">
-                <a className={styles.navbar__link}>About</a>
-            </Link>
-            <Link href="/work">
-                <a className={styles.navbar__link}>Work</a>
-            </Link>
-            <Link href="/contact">
-                <a className={styles.navbar__link}>Contact</a>
-            </Link>
+            <LinkItem href="/about" name="About" />
+            <LinkItem href="/work" name="Work" />
+            <LinkItem href="/contact" name="Contact" />
         </nav>
     );
 };
