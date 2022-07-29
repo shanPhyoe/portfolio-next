@@ -38,7 +38,7 @@ const About = () => {
                         </p>
                     </div>
                 </div>
-                <div className={styles.about__chowchow}>
+                <div className={styles.about__programmer}>
                     <Programmer />
                 </div>
             </div>

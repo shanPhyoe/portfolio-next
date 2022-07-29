@@ -10,6 +10,11 @@
     width: 45rem;
     font-size: 1.6rem;
 
+    @media (max-width: 480px) {
+        width: 40rem;
+        font-size: 1.8rem;
+    }
+
     & > p {
         text-align: justify;
         margin-bottom: 4rem;

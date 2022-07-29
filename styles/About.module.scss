@@ -4,6 +4,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 768px) {
+        height: auto;
+    }
 }
 
 .about {
@@ -14,8 +18,16 @@
     align-items: center;
     justify-content: space-between;
 
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
     &__content {
         width: 40rem;
+
+        @media (max-width: 768px) {
+            order: 2;
+        }
     }
 
     &__about {
@@ -46,9 +58,13 @@
         }
     }
 
-    &__chowchow {
+    &__programmer {
         width: 40rem;
         height: 40rem;
         position: relative;
+
+        @media (max-width: 768px) {
+            order: 1;
+        }
     }
 }

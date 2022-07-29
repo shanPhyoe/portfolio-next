@@ -12,6 +12,12 @@
         position: relative;
         margin-bottom: 5rem;
         user-select: none;
+
+        & img {
+            @media (max-width: 420px) {
+                opacity: 0.7;
+            }
+        }
     }
 }
 
