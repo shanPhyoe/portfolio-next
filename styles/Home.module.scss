@@ -17,7 +17,7 @@
             right: 3rem;
         }
 
-        @media (max-width: 420px) {
+        @media (max-width: 520px) {
             right: 50%;
             transform: translateX(50%);
         }
@@ -38,7 +38,7 @@
             left: 5rem;
         }
 
-        @media (max-width: 700px) {
+        @media (max-width: 900px) {
             & > span {
                 text-shadow: 1px 0 0px var(--color-secondary);
             }
@@ -49,8 +49,12 @@
             }
         }
 
-        @media (max-width: 420px) {
+        @media (max-width: 520px) {
             left: 4rem;
+        }
+
+        @media (max-width: 420px) {
+            left: 2rem;
         }
 
         & > span {
@@ -60,7 +64,6 @@
     }
 
     &__skills {
-        width: fit-content;
         position: absolute;
         left: 18%;
         top: 45%;
@@ -73,8 +76,10 @@
             left: 10rem;
         }
 
-        @media (max-width: 420px) {
-            left: 7rem;
+        @media (max-width: 520px) {
+            width: 30rem;
+            left: 50%;
+            transform: translateX(-50%);
         }
     }
 
@@ -87,5 +92,10 @@
         column-gap: 8rem;
         row-gap: 1.2rem;
         height: 25.2rem;
+
+        @media (max-width: 420px) {
+            column-gap: 5rem;
+            row-gap: 0.7rem;
+        }
     }
 }

@@ -1,0 +1,62 @@
+.menubox {
+    position: fixed;
+    top: 1rem;
+    right: 4rem;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.5rem;
+    z-index: 1000;
+
+    @media (max-width: 720px) {
+        display: flex;
+    }
+
+    @media (max-width: 420px) {
+        right: 1.5rem;
+    }
+
+    &__button {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--color-text-alt);
+        cursor: pointer;
+
+        &:hover {
+            border: 2px solid var(--color-tertiary);
+        }
+    }
+
+    &__icon {
+        fill: var(--color-primary);
+        width: 2rem;
+        height: 2rem;
+    }
+
+    &__links {
+        display: flex;
+        width: 14rem;
+        height: 14rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.3rem;
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        backdrop-filter: blur(4px);
+        box-shadow: 0rem 1rem 3rem rgba($color: #000000, $alpha: 0.3);
+        font-size: 1.6rem;
+        transform-origin: top right;
+        transform: scaleX(0) scaleY(0);
+        visibility: hidden;
+        transition: all 0.4s;
+
+        &--active {
+            transform: scale(1);
+            visibility: visible;
+        }
+    }
+}

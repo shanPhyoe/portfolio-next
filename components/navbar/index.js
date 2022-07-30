@@ -19,9 +19,11 @@ const Navbar = () => {
                     <span>shanPhyoe</span>
                 </a>
             </Link>
-            <LinkItem href="/about" name="About" />
-            <LinkItem href="/work" name="Work" />
-            <LinkItem href="/contact" name="Contact" />
+            <div className={styles.navbar__links}>
+                <LinkItem href="/about" name="About" />
+                <LinkItem href="/work" name="Work" />
+                <LinkItem href="/contact" name="Contact" />
+            </div>
         </nav>
     );
 };

@@ -16,6 +16,9 @@ body[data-theme='dark'] {
     --color-primary-maxdark: #006d7e;
 
     --color-secondary: #202020;
+
+    --color-tertiary: #f9f871;
+    --color-tertiary-light: #fbfb9d;
 }
 
 body[data-theme='light'] {
@@ -29,6 +32,9 @@ body[data-theme='light'] {
     --color-primary-maxdark: #006658;
 
     --color-secondary: #f8f9f0;
+
+    --color-tertiary: #2f4858;
+    --color-tertiary-light: #406277;
 }
 
 html {
@@ -38,9 +44,9 @@ html {
     position: relative;
     min-height: 100vh;
 
-    @media (max-width: 900px) {
-        font-size: 50%;
-    }
+    // @media (max-width: 900px) {
+    //     font-size: 50%;
+    // }
 }
 
 body {
@@ -82,8 +88,12 @@ h1 {
     font-size: 4.8rem;
     font-weight: 800;
 
-    @media (max-width: 420px) {
+    @media (max-width: 520px) {
         font-size: 3.8rem;
+    }
+
+    @media (max-width: 390px) {
+        font-size: 3rem;
     }
 }
 
@@ -91,8 +101,12 @@ h2 {
     font-size: 3.3rem;
     font-weight: 800;
 
-    @media (max-width: 420px) {
+    @media (max-width: 520px) {
         font-size: 2.6rem;
+    }
+
+    @media (max-width: 390px) {
+        font-size: 2.4rem;
     }
 }
 

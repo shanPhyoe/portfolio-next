@@ -25,6 +25,14 @@
         gap: 1rem;
         transition: color 0.3s;
 
+        @media (max-width: 520px) {
+            left: 3rem;
+        }
+
+        @media (max-width: 420px) {
+            left: 1.5rem;
+        }
+
         & > span {
             color: var(--color-header);
             font-weight: 800;
@@ -43,5 +51,11 @@
         transform: rotateZ(-15deg);
         transition: transform 0.3s;
         display: block;
+    }
+
+    &__links {
+        @media (max-width: 720px) {
+            display: none;
+        }
     }
 }

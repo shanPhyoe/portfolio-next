@@ -13,4 +13,8 @@
         border: 1px soid var(--color-primary);
         transform: translateY(-2px);
     }
+
+    @media (max-width: 720px) {
+        text-shadow: 1px 1px 1px var(--color-secondary);
+    }
 }
